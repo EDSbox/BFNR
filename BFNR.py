@@ -1,6 +1,17 @@
+
 import requests
 import time
 
+print("""
+
+███████╗ ███████╗ ███╗   ██╗ ██████╗ 
+██╔══██╗ ██╔════╝ ████╗  ██║ ██╔══██╗
+██████╔╝ █████╗   ██╔██╗ ██║ ██████╔╝
+██╔══██╗ ██╔══╝   ██║╚██╗██║ ██╔══██╗
+██████╔╝ ██║      ██║ ╚████║ ██║  ██║
+╚═════╝  ╚═╝      ╚═╝  ╚═══╝ ╚═╝  ╚═╝
+                                                                   
+""") #这个是用 http://patorjk.com/software/taag/ 做的
 uid = int(input('输入你的B站UID:'))
 t = int(input('输入刷新时间间隔:'))
 url = 'https://api.bilibili.com/x/relation/stat?vmid=%s&jsonp=jsonp' % (uid)
